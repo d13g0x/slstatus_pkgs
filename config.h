@@ -67,9 +67,7 @@ static const struct arg args[] = {
 
 /* function format          argument */
 		
-        {cpu_perc,      " %sMHz",    NULL },
-        {separator,     " | ",    NULL },
-        {run_command,   "%sMb",  "free -m | awk '/^Mem:/ {print $3}'"},
+        {run_command,   " %sMb",  "free -m | awk '/^Mem:/ {print $3}'"},
         {separator,     " | ",    NULL },
         {temp,          "%s°C",  "/sys/class/hwmon/hwmon2/temp1_input" },
         {separator,     " | ",    NULL },
